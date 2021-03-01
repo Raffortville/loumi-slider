@@ -1,0 +1,85 @@
+@import './variables.scss';
+
+
+/*******  ATTRIBUTS CSS COMMUNS AUX CARDS ******/
+
+.card {
+    position: relative;
+    height: 310px;
+    width:270px;
+    background-color: #fff;
+    margin: 0px 10px;   
+    padding: 15px 10px;
+    border-radius: 20px;
+    @include flex(column,flex-start,center);
+    @include box-shadow-dense;
+    
+}
+
+/******* ATTRIBUTS CSS DU COMPOSOSANT "CardCandidats" ****/
+
+#CardCandidats{
+
+    .wrap-list-candidats-infos {
+        min-height: 100px;
+        width: 80%;
+        margin: 10px 0px 10px 0px;
+
+        .li-col {
+            @include flex(column,space-between,center);
+            margin-bottom: 5px
+        }
+
+        .li-row {
+            @include flex(row,flex-start,center);
+            margin: 5px 0px;
+
+            .list-content {
+                padding-left: 15px;
+                height: 35px;
+                @include flex(column,space-around,flex-start);
+
+                & > p {
+                    margin-bottom: 3px;
+                }
+            }
+        }
+
+    }
+
+    #list-candidats-finances {
+        @include flex(row,space-around,center);
+        width: 80%;
+
+        & li {
+            @include flex(column,space-between,flex-start);
+        
+        }
+
+        &  span {
+            margin-top: 3px;
+        }
+    }
+
+    .wrap-button{
+        margin: 15px;
+        width: 95%;
+    }
+
+    .footer {
+        position: absolute;
+        background-color:$grex-xlight;
+        width: 100%;
+        bottom: 0px;
+        line-height: 30px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        @include box-shadow-dense-footer;
+        text-align: center;
+        color: white;
+        font-size: 0.8rem;
+        font-family: $montserrat;
+      
+    }
+    
+}

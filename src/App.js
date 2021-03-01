@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+/**** IMPORT AUTRES COMPONENTS **********/
+import Title from './components/header/Title'
+import Slideshow from './components/slider/Slideshow'
+
+/**** IMPORT FIELD TEMPLATE **********/
+import {headingCandidat} from './data/constants'
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="row">
+      <main>
+        <div className="container-slide">
+          <div className="wrap-title">
+            <Title title={headingCandidat}/>
+          </div>
+          <Slideshow/>
+        </div>
+      </main>
     </div>
   );
 }

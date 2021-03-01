@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+.small-border {
+    @include box-shadow-light;
+    border: 1px solid lightblue;
+    text-align: center;
+  
+
+    & p {
+        font-family: $montserrat;
+        /**** X & Y MINIMISE L'ESPACE DES FONT ***/
+        transform: scaleX(0.7) scaleY(0.8);
+        font-weight: 600;
+    }
+}

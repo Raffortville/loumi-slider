@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+
+/**** BLOC DE CSS COMMUN BUTTONS ****/
+
+@mixin btn($bg,$color,$radius) {
+    cursor: pointer;
+    padding: 9px 15px;
+    border: 1px solid transparent;
+    text-align: center;
+    @include box-shadow-medium;
+    background-color: $bg;
+    color: $color;
+    border-radius: $radius;
+    font-family: $montserrat;
+   
+}
+
+/*****   CSS SPECFIQUES  ****/
+.btn-primary {
+    @include btn($primary,white,5px);
+
+}

@@ -1,0 +1,82 @@
+/**** IMPORT FONTS GILROY - MONTSERRAT- ROBOTTO ****/
+@font-face {
+    font-family: "Gilroy-Light", sans-serif;
+    src:url('../assets/fonts/Gilroy-FREE/Gilroy-Light.otf')
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+/********* CONFIG VARIABLES & MIXINS GLOBALES *************/
+
+
+/*********** LAYOUT-FLEXBOX *************/
+    
+@mixin flex($direction,$justify,$align){
+    display: flex;
+    flex-direction:$direction;
+    justify-content: $justify;
+    align-items: $align;
+
+}
+
+/***********  END LAYOUT-FLEXBOX *************/
+/************ STLYINGS *************/
+
+@mixin box-shadow-dense {
+    box-shadow: 0 1px 10px 0 #bdbdbde1;
+
+}
+
+@mixin box-shadow-dense-footer {
+    box-shadow: 0 5px 5px 0 #bdbdbde1;
+
+}
+
+@mixin box-shadow-medium {
+    box-shadow: 0 1px 5px 0 #bdbdbd;
+
+}
+
+@mixin box-shadow-light {
+    box-shadow: 0 0px 2px 0 #bdbdbd;
+    border-radius: 5px;
+
+}
+
+/************ END STLYINGS *************/
+
+/************  COLORS  ************/
+
+$primary: #3393f3;
+
+$black-light: rgba(34, 34, 34, 0.92);
+
+$grey-light: rgba(51, 51, 51, 0.774);
+
+$grey:rgb(66, 66, 66);
+
+$grex-xlight: rgba(148, 148, 148, 0.808);
+
+/************ FONTS *************/
+
+$gilroy: "Gilroy-Light", sans-serif;
+$montserrat:'Montserrat', sans-serif;
+
+/*********  TYPO *************/
+
+@mixin font($size,$weight){
+    font-size: $size;
+    font-weight: $weight;
+    font-family:$gilroy;
+    color: $black-light;
+}
+
+/************ END TYPO **************/
+
+
+
+
+
+
+

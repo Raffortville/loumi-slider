@@ -1,0 +1,96 @@
+@import "./variables.scss";
+
+
+/**** CONFIG  REGLES CSS GLOBALE ****/
+
+*{
+  margin: 0;
+  padding: 0 ;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(236, 233, 233);
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
+}
+
+ul li {
+  list-style: none;
+
+}
+
+/*************** CONFIG TYPO COLOR GLOBALES ************/
+
+.primary {
+  color: $primary !important;
+
+}
+
+.text-black {
+  color: $black-light !important;
+
+}
+
+.text-grey-light {
+  color: $grey-light !important;
+
+}
+
+.text-grey {
+  color:$grey !important
+
+}
+
+/*************** CONFIG TYPO SIZE GLOBALES ************/
+
+.title2 {
+  @include font(1.3rem,500);
+
+}
+
+.title3 {
+  @include font(1.2rem,500)
+
+}
+
+.title4 {
+  @include font(1.1rem,500);
+  
+}
+
+.body-text1 {
+  @include font(1rem,500);
+
+}
+
+.body-text1-bold{
+  @include font(1rem,600);
+
+}
+
+.body-text2{
+  @include font(0.8rem,600)
+
+}
+
+/*************** END TYPO ************/
+
+
+/*************** STYLINGS, *********/
+.text-shadow{
+  text-shadow:  0px 1px 1px rgba(128, 128, 128, 0.2);
+  
+}
+
+/***************END STYLINGS *********/
+
+
+

@@ -1,0 +1,37 @@
+@import "./variables.scss";
+
+/*** CSS DE LA LIBRAIRIE REACT SLIDE SHOW ***/
+@import "react-slideshow-image/dist/styles.css";
+
+
+.container-slide {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 18vh 58vh 5vh;
+
+    .wrap-title{
+        grid-area: 1/2/2/2;
+        margin-left: 20px;
+        @include flex(column,flex-end,flex-start);
+    
+    }
+
+    .wrap-slide {
+        grid-area: 2/2/2/2;
+        @include flex(row,center,center);
+
+        .slide {
+            width: 100%;
+        }
+            
+        .each-slide {
+            @include flex(row,center,center);
+            padding: 10px;
+            
+        }
+        
+    }
+}
+
+
+
